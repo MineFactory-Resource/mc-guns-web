@@ -3,19 +3,6 @@ import styles from '../styles/Home.module.css'
 import Header from './header'
 import Footer from './footer'
 
-const News = () => {
-	return (
-		<div style={{backgroundColor: "#C4C4C4"}}>
-			<div>01</div>
-			<div>'‘일단은혁이’ 샌드박스 합류 후 선보인 콘텐츠 화제</div>
-			<div>수퍼주니어 은혁이 샌드박스와 함께 제작한 ‘일단은혁이’ 채널의 콘텐츠를 통해 솔직 담백한 매력을 보여주며 활약하고 있습니다.</div>
-			<div>2021. 09. 28</div>
-			<div>자세히보기</div>
-			<div>&#62;</div>
-		</div>
-	)
-}
-
 const Home = () => {
 	return (
 		<div>
@@ -54,22 +41,7 @@ const Home = () => {
 					<a href='#' className={styles.help_details}><div style={{margin: "auto"}}>자세히 보기 &#62;</div></a>
 				</div>
 			</div>
-			<div style={{width: "1280px", height: "751px", margin: "104px auto 97px auto"}}>
-				<div>
-					<span>SERVER NEWS</span>
-					<span>FPS SEVER의 새로운 소식을 접해보세요.</span>
-					<div>뉴스 더보기</div>
-				</div>
-				<div />
-				<div>
-					<News />
-					<News />
-					<News />
-					<News />
-					<News />
-					<News />
-				</div>
-			</div>
+			<div style={{width: "1280px", height: "751px", margin: "104px auto 97px auto"}} />
 			<Footer />
 		</div>
 	)
