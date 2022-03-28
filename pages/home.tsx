@@ -1,15 +1,6 @@
 import React from 'react'
+import Header from './header'
 import styles from '../styles/Home.module.css'
-
-const Header =() => {
-	return (
-		<div style={{width: "100%", height: "88px", backgroundColor: "#919191"}}>
-			<div style={{width: "1280px", height: "100%", margin: "auto", display: "flex"}}>
-				<a href='#' style={{margin: "auto 0"}}><img style={{width: "79px", height: "34px"}}/></a>
-			</div>
-		</div>
-	)
-}
 
 const Footer =() => {
 	return (
@@ -23,7 +14,14 @@ const Footer =() => {
 
 const News = () => {
 	return (
-		<div></div>
+		<div style={{backgroundColor: "#C4C4C4"}}>
+			<div>01</div>
+			<div>'‘일단은혁이’ 샌드박스 합류 후 선보인 콘텐츠 화제</div>
+			<div>수퍼주니어 은혁이 샌드박스와 함께 제작한 ‘일단은혁이’ 채널의 콘텐츠를 통해 솔직 담백한 매력을 보여주며 활약하고 있습니다.</div>
+			<div>2021. 09. 28</div>
+			<div>자세히보기</div>
+			<div>&#62;</div>
+		</div>
 	)
 }
 
@@ -50,14 +48,14 @@ const Home = () => {
 				</div>
 			</div>
 			<div className={styles.help_container}>
-				<div className={styles.help_item_box} style={{justifyContent: "right", backgroundColor: "#C4C4C4"}}>
+				<div className={styles.help_item_box} style={{justifyContent: "right", background: "linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 45.42%), #8B949B"}}>
 					<div>
 						<div className={styles.help_title}>서버 이용 약관</div>
 						<div style={{marginTop: "5px"}}>대충 어떤 문장</div>
 					</div>
 					<a href='#' className={styles.help_details} style={{marginRight: "85px"}}><div style={{margin: "auto"}}>자세히 보기 &#62;</div></a>
 				</div>
-				<div className={styles.help_item_box} style={{justifyContent: "left", backgroundColor: "#A4A4A4"}}>
+				<div className={styles.help_item_box} style={{justifyContent: "left", backgroundColor: "#8B949B"}}>
 					<div style={{marginLeft: "85px"}}>
 						<div className={styles.help_title}>서버 FAQ</div>
 						<div style={{marginTop: "5px"}}>대충 어떤 문장</div>
