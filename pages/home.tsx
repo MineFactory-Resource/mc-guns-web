@@ -1,46 +1,66 @@
 import React from 'react'
-import styles from '../styles/Home.module.css'
-import Header from './header'
-import Footer from './footer'
+import Image from 'next/image'
+import styles from '../styles/Home.module.scss'
+import Header from '../components/header'
+import Footer from '../components/footer'
+
+const link_styles = {
+	discord_button: {
+		width: "136px",
+		height: "28px"
+	},
+	minelist_button: {
+		width: "102px",
+		height: "28px",
+		marginRight: "12px"
+	},
+	minepage_button: {
+		width: "102px",
+		height: "28px"
+	}
+}
 
 const Home = () => {
 	return (
 		<div>
 			<Header />
-			<div className={styles.top_container}>
-				<img style={{width: "185px", height: "55px", marginTop: "104px"}}/>
-				<div style={{marginTop: "37px"}}>서버 소개 문구</div>
-				<div style={{marginTop: "111px"}}>서버 주소</div>
-				<div style={{marginTop: "11px"}}>online : 100 명</div>
-				<div className={styles.link_container} style={{marginTop: "74px"}}>
-					<div style={{textAlign: "right"}}>
-						<div className={styles.link_title}>디스코드</div>
-						<div className={styles.link_terms}>The term design, chairman, refers to design,<br />derives from the Latin word designare.</div>
-					</div>
-					<img style={{width: "103px", height: "103px", marginRight: "46px", marginLeft: "46px"}}/>
-					<img style={{width: "103px", height: "103px", marginRight: "46px"}}/>
-					<div style={{textAlign: "left"}}>
-						<div className={styles.link_title}>마인리스트</div>
-						<div className={styles.link_terms}>The term design, chairman, refers to design,<br />derives from the Latin word designare.</div>
-					</div>
+			<div className={styles.banner_container}>
+				<div className={styles.banner_background_container}>
+					<div className={styles.banner_background}/>
+					<Image  src='/../public/img/banner_image.png' width='1400' height='600'/>
 				</div>
+				<div className={styles.banner_contents}>
+					<img className={styles.banner_logo}/>
+					<span className={styles.banner_summary}>마인크래프트 오리지널 FPS의 <br/>다양한 게임 모드를 플레이해 보세요!</span>
+					<div className={styles.banner_address}>
+						<span>mc-guns.com</span>
+						<button><Image src='/../public/img/btn_copy.png' width='20' height='20'/></button>
+					</div>
+					<div className={styles.banner_server_state}><span>ONLINE</span></div>
+					<span className={styles.banner_server_player}>접속자 수 <strong>15</strong>명</span>
+					<div className={styles.banner_link_container}>
+						<div className={styles.link_container}>
+							<div className={styles.link_title}>
+								<Image src='/../public/img/img_discord.png' width='24' height='24'/>
+								<span>디스코드</span>
+							</div>
+							<p>유저들과 함께 소통할 수 있는 커뮤니티에 초대합니다</p>
+							<button style={link_styles.discord_button}><span>디스코드 입장하기</span></button>
+						</div>
+						<div className={styles.link_line}/>
+						<div className={styles.link_container}>
+							<div className={styles.link_title}>
+								<Image src='/../public/img/img_like.png' width='24' height='24'/>
+								<span>추천</span>
+							</div>
+							<p>MC GUNS 서버 추천하고 게임 내 보상 획득하기</p>
+							<button style={link_styles.minelist_button}><span>마인리스트</span></button>
+							<button style={link_styles.minepage_button}><span>마인페이지</span></button>
+						</div>
+					</div>
+				</div>		
 			</div>
-			<div className={styles.help_container}>
-				<div className={styles.help_item_box} style={{justifyContent: "right", background: "linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 45.42%), #8B949B"}}>
-					<div>
-						<div className={styles.help_title}>서버 이용 약관</div>
-						<div style={{marginTop: "5px"}}>대충 어떤 문장</div>
-					</div>
-					<a href='#' className={styles.help_details} style={{marginRight: "85px"}}><div style={{margin: "auto"}}>자세히 보기 &#62;</div></a>
-				</div>
-				<div className={styles.help_item_box} style={{justifyContent: "left", backgroundColor: "#8B949B"}}>
-					<div style={{marginLeft: "85px"}}>
-						<div className={styles.help_title}>서버 FAQ</div>
-						<div style={{marginTop: "5px"}}>대충 어떤 문장</div>
-					</div>
-					<a href='#' className={styles.help_details}><div style={{margin: "auto"}}>자세히 보기 &#62;</div></a>
-				</div>
-			</div>
+
 			<div style={{width: "1280px", height: "751px", margin: "104px auto 97px auto"}} />
 			<Footer />
 		</div>
