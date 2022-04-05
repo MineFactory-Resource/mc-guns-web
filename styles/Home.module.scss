@@ -1,3 +1,11 @@
+.background {
+	width: 100%;
+	height: 608px;
+	position: absolute;
+	top: -88px;
+	z-index: -1;
+}
+
 .banner_container {
 	width: 1400px;
 	height: 600px;
@@ -143,4 +151,16 @@
 		margin: 0 44px 0 44px;
 		background: #FFFFFF;
 	}
+}
+
+.banner_shadow {
+	width: 1278px;
+	height: 548px;
+	position: absolute;
+	top: 225px;
+    left: 50%;
+	transform: translate(-50%);
+	z-index: -2;
+	background: rgba(0, 0, 0, 0.2);
+	filter: blur(40px);
 }

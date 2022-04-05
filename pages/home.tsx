@@ -24,10 +24,13 @@ const Home = () => {
 	return (
 		<div>
 			<Header />
+			<div className={styles.background}>
+				<Image src='/../public/img/img_background.png' layout='fill'/>
+			</div>
 			<div className={styles.banner_container}>
 				<div className={styles.banner_background_container}>
 					<div className={styles.banner_background}/>
-					<Image  src='/../public/img/banner_image.png' width='1400' height='600'/>
+					<Image src='/../public/img/img_banner.png' width='1400' height='600'/>
 				</div>
 				<div className={styles.banner_contents}>
 					<img className={styles.banner_logo}/>
@@ -58,7 +61,8 @@ const Home = () => {
 							<button style={link_styles.minepage_button}><span>마인페이지</span></button>
 						</div>
 					</div>
-				</div>		
+				</div>
+				<div className={styles.banner_shadow}/>
 			</div>
 
 			<div style={{width: "1280px", height: "751px", margin: "104px auto 97px auto"}} />
