@@ -64,7 +64,28 @@ const Home = () => {
 				</div>
 				<div className={styles.banner_shadow}/>
 			</div>
-
+			<div className={styles.navigation_container}>
+				<div className={styles.navigation}>
+					<div>
+						<span>서버 이용 약관</span>
+						<p>대충 어떤 문장</p>
+					</div>
+					<button>
+						<span>자세히 보기</span>
+						<Image src='/../public/img/ic_arrow.png' width='4'height='8'/>
+					</button>
+				</div>
+				<div className={styles.navigation}>
+					<div>
+						<span>서버 FAQ</span>
+						<p>대충 어떤 문장</p>
+					</div>
+					<button>
+						<span>자세히 보기</span>
+						<Image src='/../public/img/img_arrow.png' width='4'height='8'/>
+					</button>
+				</div>
+			</div>
 			<div style={{width: "1280px", height: "751px", margin: "104px auto 97px auto"}} />
 			<Footer />
 		</div>
