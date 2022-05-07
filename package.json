@@ -12,9 +12,12 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "next": "12.1.4",
+    "raw-loader": "^4.0.2",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-markdown": "^8.0.2"
+    "react-markdown": "^8.0.2",
+    "rehype-raw": "^6.1.1",
+    "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "17.0.23",
